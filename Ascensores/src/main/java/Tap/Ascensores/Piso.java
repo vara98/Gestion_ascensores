@@ -1,0 +1,32 @@
+package Tap.Ascensores;
+import java.util.ArrayList;
+import Tap.Displays.Observer;
+
+public abstract class Piso {
+	protected ArrayList<Observer> observers;
+	
+	protected int piso;
+
+	
+	public Piso() {
+		this.observers = new ArrayList<Observer>();
+	}
+	
+	protected void addObserver(Observer o)
+	{
+		this.observers.add(o);
+	}
+	
+	protected void removeObserver(Observer o) {
+		this.observers.remove(o);
+	}
+	
+	protected void notifyObservers() {
+		for(Observer o : observers)
+			o.update(this);
+	}
+	
+	public int getPiso() {
+		return piso;
+	}
+}
