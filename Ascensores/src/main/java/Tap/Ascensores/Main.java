@@ -26,6 +26,7 @@ public class Main {
 		
 		
 		
+<<<<<<< HEAD
 
 		
 		for (int i = 0; i <= 6; i++) {
@@ -46,6 +47,8 @@ public class Main {
 			data.notifyObservers();
 		}
 
+=======
+>>>>>>> pablo
 		
 	}
 

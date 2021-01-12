@@ -1,0 +1,15 @@
+package Tap.Ascensores;
+import Tap.Displays.Pisos;
+
+public class Main {
+
+	public static void main(String[] args) {
+		for (int i = 0; i <= 6; i++) {
+		Piso data = new DataPiso(i);
+		data.addObserver(new Pisos());
+		data.notifyObservers();
+		}
+		
+	}
+
+}

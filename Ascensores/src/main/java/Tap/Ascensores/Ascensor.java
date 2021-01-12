@@ -1,6 +1,9 @@
 package Tap.Ascensores;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> pablo
 import java.util.ArrayList;
 
 public class Ascensor {
@@ -97,8 +100,11 @@ public class Ascensor {
 
 	
 	
+<<<<<<< HEAD
 
 public class Ascensor {
 
 
+=======
+>>>>>>> pablo
 }
