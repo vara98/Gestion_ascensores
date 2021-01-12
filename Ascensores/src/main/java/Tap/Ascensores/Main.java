@@ -1,14 +1,10 @@
 package Tap.Ascensores;
-import Tap.Displays.PisosComb;
-import Tap.Displays.PisosNumero;
-import Tap.Displays.PisosLed;
+import Tap.Ascensores.PisosLed;
 
 public class Main {
 
 	public static void main(String[] args) {
 
-		// TODO Auto-generated method stub
-		
 		Edificio edificio= new Edificio();
 		Ascensor a1 = new Ascensor(3);
 		edificio.addproducto(a1);
@@ -22,33 +18,6 @@ public class Main {
 		a1.notifyObservers();
 		edificio.viajar(a1,5);
 		a1.notifyObservers();
-
-		
-		
-		
-<<<<<<< HEAD
-
-		
-		for (int i = 0; i <= 6; i++) {
-			Piso data = new DataPiso(i);
-			data.addObserver(new PisosNumero());
-			data.notifyObservers();
-		}
-		
-		for (int i = 0; i <= 6; i++) {
-			Piso data = new DataPiso(i);
-			data.addObserver(new PisosLed());
-			data.notifyObservers();
-		}
-		
-		for (int i = 0; i <= 6; i++) {
-			Piso data = new DataPiso(i);
-			data.addObserver(new PisosComb());
-			data.notifyObservers();
-		}
-
-=======
->>>>>>> pablo
 		
 	}
 

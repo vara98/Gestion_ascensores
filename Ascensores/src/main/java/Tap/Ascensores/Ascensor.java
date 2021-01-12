@@ -1,9 +1,5 @@
 package Tap.Ascensores;
 
-<<<<<<< HEAD
-
-=======
->>>>>>> pablo
 import java.util.ArrayList;
 
 public class Ascensor {
@@ -45,8 +41,6 @@ public class Ascensor {
 	public void pararse(Ascensor a) {
 		this.current.pararse(this,piso);
 	}
-
-	
 	
 	protected void addObserver(Observer o)
 	{
@@ -78,10 +72,6 @@ public class Ascensor {
 		this.pisoObjetivo = pisoObjetivo;
 	}
 	
-	
-	
-	
-
 	public int getPisoLLamada() {
 		return pisoLLamada;
 	}
@@ -90,21 +80,4 @@ public class Ascensor {
 		this.pisoLLamada = pisoLLamada;
 	}
 	
-	
-	
-	
-
-	
-	
-	
-
-	
-	
-<<<<<<< HEAD
-
-public class Ascensor {
-
-
-=======
->>>>>>> pablo
 }
