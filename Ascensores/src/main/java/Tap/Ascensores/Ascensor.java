@@ -1,5 +1,6 @@
 package Tap.Ascensores;
 
+
 import java.util.ArrayList;
 
 public class Ascensor {
@@ -96,4 +97,8 @@ public class Ascensor {
 
 	
 	
+
+public class Ascensor {
+
+
 }
