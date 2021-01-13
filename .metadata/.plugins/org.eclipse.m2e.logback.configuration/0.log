@@ -471,3 +471,135 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact com.vaadin:va
 2021-01-11 19:50:20,515 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2021-01-11 19:50:20,516 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2021-01-11 19:50:20,517 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UFV\Cuarto\Primer cuatrimestre\TAP\Gestion_ascensores\Ascensores\src\test\resources
+2021-01-12 18:59:24,386 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-01-12 18:59:31,015 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Updating theme VAADIN\themes\mytheme
+2021-01-12 18:59:31,556 [Thread-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Widgetsets found from classpath:
+2021-01-12 18:59:31,556 [Thread-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Addon styles found from classpath:
+2021-01-12 18:59:31,556 [Thread-20] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2021-01-12 18:59:31,556 [Thread-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Search took 15ms
+2021-01-12 18:59:31,744 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Theme "VAADIN\themes\mytheme" updated
+2021-01-12 18:59:31,752 [Worker-9: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - GWT plugin is configured to detect modules, but none were found.
+2021-01-12 18:59:31,754 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - No widgetsets found - generating AppWidgetset if necessary.
+2021-01-12 18:59:31,756 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Updating widgetset AppWidgetset
+2021-01-12 18:59:31,756 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Adding resource directory to command classpath: D:\UFV\Cuarto\Primer cuatrimestre\TAP\Gestion_ascensores\Ascensores\src\main\resources
+2021-01-12 18:59:31,757 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Adding resource directory to command classpath: D:\UFV\Cuarto\Primer cuatrimestre\TAP\Gestion_ascensores\Ascensores\target\generated-resources\gwt
+2021-01-12 18:59:31,762 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using com.vaadin:vaadin-client version 7.7.17
+2021-01-12 18:59:31,981 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using com.vaadin:vaadin-client-compiler version 7.7.17
+2021-01-12 18:59:32,889 [Thread-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Widgetsets found from classpath:
+2021-01-12 18:59:32,889 [Thread-23] INFO  o.e.m.c.i.embedder.EclipseLogger - 	com.vaadin.DefaultWidgetSet in jar:file:C:/Users/vitiu/.m2/repository/com/vaadin/vaadin-client/7.7.17/vaadin-client-7.7.17.jar!/
+2021-01-12 18:59:32,889 [Thread-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Addon styles found from classpath:
+2021-01-12 18:59:32,890 [Thread-23] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2021-01-12 18:59:32,890 [Thread-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Search took 15ms
+2021-01-12 18:59:32,947 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Updating theme VAADIN\themes\mytheme
+2021-01-12 18:59:39,043 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Theme "VAADIN\themes\mytheme" compiled
+2021-01-12 18:59:39,253 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-12 18:59:39,254 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-01-12 18:59:39,266 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-01-12 18:59:39,280 [Worker-9: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - GWT plugin is configured to detect modules, but none were found.
+2021-01-12 18:59:39,284 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using com.vaadin:vaadin-client version 7.7.17
+2021-01-12 18:59:39,294 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using com.vaadin:vaadin-client-compiler version 7.7.17
+2021-01-12 18:59:39,309 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-12 18:59:39,309 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UFV\Cuarto\Primer cuatrimestre\TAP\Gestion_ascensores\Ascensores\src\test\resources
+2021-01-12 18:59:41,402 [Worker-12: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: Tap:Ascensores:1.0-SNAPSHOT @ D:\UFV\Cuarto\Primer cuatrimestre\TAP\Gestion_ascensores\Ascensores\pom.xml.
+2021-01-12 18:59:43,157 [Worker-12: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - GWT plugin is configured to detect modules, but none were found.
+2021-01-12 18:59:43,159 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - No widgetsets found - generating AppWidgetset if necessary.
+2021-01-12 18:59:43,163 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Updating widgetset AppWidgetset
+2021-01-12 18:59:43,168 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Adding resource directory to command classpath: D:\UFV\Cuarto\Primer cuatrimestre\TAP\Gestion_ascensores\Ascensores\src\main\resources
+2021-01-12 18:59:43,168 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Adding resource directory to command classpath: D:\UFV\Cuarto\Primer cuatrimestre\TAP\Gestion_ascensores\Ascensores\target\generated-resources\gwt
+2021-01-12 18:59:43,171 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using com.vaadin:vaadin-client version 7.7.17
+2021-01-12 18:59:43,183 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using com.vaadin:vaadin-client-compiler version 7.7.17
+2021-01-12 18:59:43,492 [Thread-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Widgetsets found from classpath:
+2021-01-12 18:59:43,493 [Thread-28] INFO  o.e.m.c.i.embedder.EclipseLogger - 	com.vaadin.DefaultWidgetSet in jar:file:C:/Users/vitiu/.m2/repository/com/vaadin/vaadin-client/7.7.17/vaadin-client-7.7.17.jar!/
+2021-01-12 18:59:43,493 [Thread-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Addon styles found from classpath:
+2021-01-12 18:59:43,493 [Thread-28] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2021-01-12 18:59:43,493 [Thread-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Search took 9ms
+2021-01-12 18:59:43,621 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-12 18:59:43,623 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-01-12 18:59:43,629 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-01-12 18:59:43,634 [Worker-12: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - GWT plugin is configured to detect modules, but none were found.
+2021-01-12 18:59:43,638 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using com.vaadin:vaadin-client version 7.7.17
+2021-01-12 18:59:43,646 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using com.vaadin:vaadin-client-compiler version 7.7.17
+2021-01-12 18:59:43,659 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-12 18:59:43,659 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UFV\Cuarto\Primer cuatrimestre\TAP\Gestion_ascensores\Ascensores\src\test\resources
+2021-01-12 19:01:19,082 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-12 19:01:19,083 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-01-12 19:01:19,087 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-12 19:01:19,087 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UFV\Cuarto\Primer cuatrimestre\TAP\Gestion_ascensores\Ascensores\src\test\resources
+2021-01-12 19:01:20,129 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-12 19:01:20,130 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-01-12 19:01:20,133 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-12 19:01:20,133 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UFV\Cuarto\Primer cuatrimestre\TAP\Gestion_ascensores\Ascensores\src\test\resources
+2021-01-12 19:01:57,254 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-12 19:01:57,255 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-01-12 19:01:57,256 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-12 19:01:57,257 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UFV\Cuarto\Primer cuatrimestre\TAP\Gestion_ascensores\Ascensores\src\test\resources
+2021-01-12 19:02:45,475 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-12 19:02:45,476 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-01-12 19:02:45,478 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-12 19:02:45,478 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UFV\Cuarto\Primer cuatrimestre\TAP\Gestion_ascensores\Ascensores\src\test\resources
+2021-01-12 19:04:23,311 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-12 19:04:23,312 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-01-12 19:04:23,314 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-12 19:04:23,314 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UFV\Cuarto\Primer cuatrimestre\TAP\Gestion_ascensores\Ascensores\src\test\resources
+2021-01-12 19:04:50,281 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-12 19:04:50,281 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-01-12 19:04:50,285 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-12 19:04:50,285 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UFV\Cuarto\Primer cuatrimestre\TAP\Gestion_ascensores\Ascensores\src\test\resources
+2021-01-12 19:05:14,596 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-12 19:05:14,597 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-01-12 19:05:14,600 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-12 19:05:14,600 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UFV\Cuarto\Primer cuatrimestre\TAP\Gestion_ascensores\Ascensores\src\test\resources
+2021-01-12 19:07:05,540 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-12 19:07:05,540 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-01-12 19:07:05,542 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-12 19:07:05,542 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UFV\Cuarto\Primer cuatrimestre\TAP\Gestion_ascensores\Ascensores\src\test\resources
+2021-01-12 19:07:22,859 [Worker-14: Launching Main] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-12 19:07:22,860 [Worker-14: Launching Main] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-01-12 19:07:22,862 [Worker-14: Launching Main] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-12 19:07:22,862 [Worker-14: Launching Main] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UFV\Cuarto\Primer cuatrimestre\TAP\Gestion_ascensores\Ascensores\src\test\resources
+2021-01-12 19:09:54,612 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-12 19:09:54,612 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-01-12 19:09:54,616 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-12 19:09:54,616 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UFV\Cuarto\Primer cuatrimestre\TAP\Gestion_ascensores\Ascensores\src\test\resources
+2021-01-12 20:09:48,481 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-12 20:09:48,482 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-01-12 20:09:48,485 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-12 20:09:48,486 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UFV\Cuarto\Primer cuatrimestre\TAP\Gestion_ascensores\Ascensores\src\test\resources
+2021-01-13 15:36:40,577 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2021-01-13 16:39:01,832 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-01-13 16:43:10,035 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Updating theme VAADIN\themes\mytheme
+2021-01-13 16:43:10,324 [Thread-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Widgetsets found from classpath:
+2021-01-13 16:43:10,324 [Thread-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Addon styles found from classpath:
+2021-01-13 16:43:10,324 [Thread-24] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2021-01-13 16:43:10,324 [Thread-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Search took 7ms
+2021-01-13 16:43:10,342 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Theme "VAADIN\themes\mytheme" updated
+2021-01-13 16:43:10,347 [Worker-20: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - GWT plugin is configured to detect modules, but none were found.
+2021-01-13 16:43:10,350 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - No widgetsets found - generating AppWidgetset if necessary.
+2021-01-13 16:43:10,352 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Updating widgetset AppWidgetset
+2021-01-13 16:43:10,353 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Adding resource directory to command classpath: D:\UFV\Cuarto\Primer cuatrimestre\TAP\Gestion_ascensores\Ascensores\src\main\resources
+2021-01-13 16:43:10,353 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Adding resource directory to command classpath: D:\UFV\Cuarto\Primer cuatrimestre\TAP\Gestion_ascensores\Ascensores\target\generated-resources\gwt
+2021-01-13 16:43:10,362 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using com.vaadin:vaadin-client version 7.7.17
+2021-01-13 16:43:10,514 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using com.vaadin:vaadin-client-compiler version 7.7.17
+2021-01-13 16:43:11,027 [Thread-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Widgetsets found from classpath:
+2021-01-13 16:43:11,027 [Thread-26] INFO  o.e.m.c.i.embedder.EclipseLogger - 	com.vaadin.DefaultWidgetSet in jar:file:C:/Users/vitiu/.m2/repository/com/vaadin/vaadin-client/7.7.17/vaadin-client-7.7.17.jar!/
+2021-01-13 16:43:11,027 [Thread-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Addon styles found from classpath:
+2021-01-13 16:43:11,027 [Thread-26] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2021-01-13 16:43:11,028 [Thread-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Search took 9ms
+2021-01-13 16:43:11,060 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Updating theme VAADIN\themes\mytheme
+2021-01-13 16:43:14,359 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Theme "VAADIN\themes\mytheme" compiled
+2021-01-13 16:43:14,590 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-13 16:43:14,590 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-01-13 16:43:14,601 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-01-13 16:43:14,609 [Worker-20: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - GWT plugin is configured to detect modules, but none were found.
+2021-01-13 16:43:14,611 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using com.vaadin:vaadin-client version 7.7.17
+2021-01-13 16:43:14,621 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using com.vaadin:vaadin-client-compiler version 7.7.17
+2021-01-13 16:43:14,635 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-13 16:43:14,636 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UFV\Cuarto\Primer cuatrimestre\TAP\Gestion_ascensores\Ascensores\src\test\resources
+2021-01-13 16:44:22,346 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-13 16:44:22,349 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-01-13 16:44:22,351 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-13 16:44:22,352 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UFV\Cuarto\Primer cuatrimestre\TAP\Gestion_ascensores\Ascensores\src\test\resources
+2021-01-13 16:44:23,382 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-13 16:44:23,383 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-01-13 16:44:23,384 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-13 16:44:23,384 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\UFV\Cuarto\Primer cuatrimestre\TAP\Gestion_ascensores\Ascensores\src\test\resources
