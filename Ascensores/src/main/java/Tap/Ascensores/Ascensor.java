@@ -41,6 +41,14 @@ public class Ascensor {
 	public void pararse(Ascensor a) {
 		this.current.pararse(this,piso);
 	}
+<<<<<<< HEAD
+=======
+
+	public void saberEstado(Ascensor a) {
+        System.out.println(this.current);
+
+    }
+>>>>>>> master
 	
 	protected void addObserver(Observer o)
 	{
