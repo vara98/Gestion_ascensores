@@ -13,25 +13,25 @@ public class PisosLed implements Observer {
 	}
 	
 	public void display() {
-		if (this.piso == 0) {
+		if (this.piso == 1) {
 			System.out.println("*------");
 		}
-		else if (this.piso == 1) {
+		else if (this.piso == 2) {
 			System.out.println("**-----");
 		}
-		else if (this.piso == 2) {
+		else if (this.piso == 3) {
 			System.out.println("***----");
 		}
-		else if (this.piso == 3) {
+		else if (this.piso == 4) {
 			System.out.println("****---");
 		}
-		else if (this.piso == 4) {
+		else if (this.piso == 5) {
 			System.out.println("*****--");
 		}
-		else if (this.piso == 5) {
+		else if (this.piso == 6) {
 			System.out.println("******-");
 		}
-		else if (this.piso == 6) {
+		else if (this.piso == 7) {
 			System.out.println("*******");
 		}
 		else {

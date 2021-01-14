@@ -26,6 +26,9 @@ import com.vaadin.ui.Window;
 public class MyUI extends UI {
 	
 	private Edificio edificio = new Edificio();
+	private int piso1flg = 0;
+	private int piso2flg = 0;
+	private int piso3flg = 0;
 
 
     @Override
@@ -34,18 +37,16 @@ public class MyUI extends UI {
         
         final HorizontalLayout hlayout = new HorizontalLayout();
         
-        Ascensor a1 = new Ascensor(3);
-        Ascensor a2 = new Ascensor(2);
-        Ascensor a3 = new Ascensor(1);
-        
+        Ascensor a1 = new Ascensor(2);
+        Ascensor a2 = new Ascensor(7);
+        Ascensor a3 = new Ascensor(4);
+     
         layout.addComponent(new Label(
                 "<h1>\tPRÁCTICA 2 TAP</h1>\n" +
-                "<p>LLAMAR ASCENSOR</p>",
+                "<p>GESTIÓN DE ASCENSORES Y PANEL DE CONTROL</p>",
                 ContentMode.HTML));
         
         
-        
-   
                              	
      //---------------------------------------------------------------
      	
@@ -54,9 +55,15 @@ public class MyUI extends UI {
      			Window subWindow = new Window("ASCENSOR 1");
                 VerticalLayout subContent = new VerticalLayout();
                 subWindow.setContent(subContent);
-                
-             
 
+                if (piso1flg == 0) {
+                	edificio.llamarAscensor(a1, 1);
+                	piso1flg = 1;
+                }else
+                	edificio.llamarAscensor(a1, a1.getPiso());
+             
+                Notification.show("EL ASCENSOR HA LLEGADO AL PISO " + a1.getPiso() + "\nABRIENDO PUERTAS\nCERRANDO PUERTAS");
+                
                 // Set window size.
                 subWindow.setHeight("600px");
                 subWindow.setWidth("400px");
@@ -69,39 +76,38 @@ public class MyUI extends UI {
                 subContent.addComponent(new Label("ESTAS USANDO EL ASCENSOR 1\n"));
                 
                 subContent.addComponent(new Button("1\n",
-                        e -> {Notification.show("LLAMANDO PISO 1");
-                        edificio.llamarAscensor(a1, 1);
-                        
+                        e -> {edificio.llamarAscensor(a1, 1);
+                        	Notification.show("LLAMANDO PISO 1\nHA LLEGADO AL PISO " + a1.getPiso() + "\nABRIENDO PUERTAS\nCERRANDO PUERTAS");
                         }));
                 
                 subContent.addComponent(new Button("2",
-                        e -> {Notification.show("LLAMANDO PISO 2");
-                        edificio.llamarAscensor(a1, 2);
+                        e -> {edificio.llamarAscensor(a1, 2);
+                    	Notification.show("LLAMANDO PISO 2\nHA LLEGADO AL PISO " + a1.getPiso() + "\nABRIENDO PUERTAS\nCERRANDO PUERTAS");
                         
                         }));
                 subContent.addComponent(new Button("3",
-                        e -> {Notification.show("LLAMANDO PISO 3");
-                        edificio.llamarAscensor(a1, 3);
+                        e -> {edificio.llamarAscensor(a1, 3);
+                    	Notification.show("LLAMANDO PISO 3\nHA LLEGADO AL PISO " + a1.getPiso() + "\nABRIENDO PUERTAS\nCERRANDO PUERTAS");
                         
                         }));
                 subContent.addComponent(new Button("4",
-                        e -> {Notification.show("LLAMANDO PISO 4");
-                        edificio.llamarAscensor(a1, 4);
+                        e -> {edificio.llamarAscensor(a1, 4);
+                    	Notification.show("LLAMANDO PISO 4\nHA LLEGADO AL PISO " + a1.getPiso() + "\nABRIENDO PUERTAS\nCERRANDO PUERTAS");
                         
                         }));
                 subContent.addComponent(new Button("5",
-                        e -> {Notification.show("LLAMANDO PISO 5");
-                        edificio.llamarAscensor(a1, 5);
+                        e -> {edificio.llamarAscensor(a1, 5);
+                    	Notification.show("LLAMANDO PISO 5\nHA LLEGADO AL PISO " + a1.getPiso() + "\nABRIENDO PUERTAS\nCERRANDO PUERTAS");
                         
                         }));
                 subContent.addComponent(new Button("6",
-                        e -> {Notification.show("LLAMANDO PISO 6");
-                        edificio.llamarAscensor(a1, 6);
+                        e -> {edificio.llamarAscensor(a1, 6);
+                    	Notification.show("LLAMANDO PISO 6\nHA LLEGADO AL PISO " + a1.getPiso() + "\nABRIENDO PUERTAS\nCERRANDO PUERTAS");
                         
                         }));
                 subContent.addComponent(new Button("7",
-                		 e -> {Notification.show("LLAMANDO PISO 7");
-                         edificio.llamarAscensor(a1, 7);
+                		 e -> {edificio.llamarAscensor(a1, 7);
+                     	Notification.show("LLAMANDO PISO 7\nHA LLEGADO AL PISO " + a1.getPiso() + "\nABRIENDO PUERTAS\nCERRANDO PUERTAS");
                          
                          }));
                  
@@ -118,9 +124,8 @@ public class MyUI extends UI {
                          }));
                  
                  subContent.addComponent(new Button("Piso Actual",
-                         e -> {
-                         	a1.notifyObservers();
-                         
+                         e -> {Notification.show("Piso " + a1.getPiso() + " ");
+                        	 a1.notifyObservers();
                          }));
                  
                  subContent.addComponent(new Button("Estado de las puertas",
@@ -129,7 +134,9 @@ public class MyUI extends UI {
                          
                          }));
                  
-
+                 subContent.addComponent(new Button("EMERGENCIA",
+                         e -> {Notification.show("Alerta de emergencia emitida");
+                         }));
                  // Open it in the UI
                  addWindow(subWindow);
                  //------------------
@@ -147,9 +154,14 @@ public class MyUI extends UI {
       			Window subWindow = new Window("ASCENSOR 2");
                  VerticalLayout subContent = new VerticalLayout();
                  subWindow.setContent(subContent);
+                 if (piso2flg == 0) {
+                 	edificio.llamarAscensor(a2, 1);
+                 	piso2flg = 1;
+                 }else
+                 	edificio.llamarAscensor(a2, a2.getPiso());
                  
-              
-
+                 Notification.show("EL ASCENSOR HA LLEGADO AL PISO " + a2.getPiso() + "\nABRIENDO PUERTAS\nCERRANDO PUERTAS");
+                 
                  // Set window size.
                  subWindow.setHeight("600px");
                  subWindow.setWidth("400px");
@@ -161,64 +173,67 @@ public class MyUI extends UI {
                  subContent.addComponent(new Label("ESTAS USANDO EL ASCENSOR 2\n"));
                  
                  subContent.addComponent(new Button("1\n",
-                         e -> {Notification.show("LLAMANDO PISO 1");
-                         edificio.llamarAscensor(a2, 1);
+                         e -> {edificio.llamarAscensor(a2, 1);
+                         	Notification.show("LLAMANDO PISO 1\nHA LLEGADO AL PISO " + a2.getPiso() + "\nABRIENDO PUERTAS\nCERRANDO PUERTAS");
                          }));
                  
                  subContent.addComponent(new Button("2",
-                         e -> {Notification.show("LLAMANDO PISO 2");
-                         edificio.llamarAscensor(a2, 2);
+                         e -> {edificio.llamarAscensor(a2, 2);
+                     	Notification.show("LLAMANDO PISO 2\nHA LLEGADO AL PISO " + a2.getPiso() + "\nABRIENDO PUERTAS\nCERRANDO PUERTAS");
                          
                          }));
                  subContent.addComponent(new Button("3",
-                         e -> {Notification.show("LLAMANDO PISO 3");
-                         edificio.llamarAscensor(a2, 3);
+                         e -> {edificio.llamarAscensor(a2, 3);
+                     	Notification.show("LLAMANDO PISO 3\nHA LLEGADO AL PISO " + a2.getPiso() + "\nABRIENDO PUERTAS\nCERRANDO PUERTAS");
                          
                          }));
                  subContent.addComponent(new Button("4",
-                         e -> {Notification.show("LLAMANDO PISO 4");
-                         edificio.llamarAscensor(a2, 4);
+                         e -> {edificio.llamarAscensor(a2, 4);
+                     	Notification.show("LLAMANDO PISO 4\nHA LLEGADO AL PISO " + a2.getPiso() + "\nABRIENDO PUERTAS\nCERRANDO PUERTAS");
                          
                          }));
                  subContent.addComponent(new Button("5",
-                         e -> {Notification.show("LLAMANDO PISO 5");
-                         edificio.llamarAscensor(a2, 5);
+                         e -> {edificio.llamarAscensor(a2, 5);
+                     	Notification.show("LLAMANDO PISO 5\nHA LLEGADO AL PISO " + a2.getPiso() + "\nABRIENDO PUERTAS\nCERRANDO PUERTAS");
                          
                          }));
                  subContent.addComponent(new Button("6",
-                         e -> {Notification.show("LLAMANDO PISO 6");
-                         edificio.llamarAscensor(a2, 6);
+                         e -> {edificio.llamarAscensor(a2, 6);
+                     	Notification.show("LLAMANDO PISO 6\nHA LLEGADO AL PISO " + a2.getPiso() + "\nABRIENDO PUERTAS\nCERRANDO PUERTAS");
                          
                          }));
                  subContent.addComponent(new Button("7",
-                         e -> {Notification.show("LLAMANDO PISO 7");
-                         edificio.llamarAscensor(a2, 7);
-                         
-                         }));
-                 
-                 subContent.addComponent(new Button("\nAbrir Puertas",
-                         e -> {
-                         	a2.abrirPuertas(a2);
-                         
-                         }));
-                 
-                 subContent.addComponent(new Button("Cerrar Puertas",
-                         e -> {
-                         	a2.cerrarPuertas(a2);
-                         
-                         }));
-                 
-                 subContent.addComponent(new Button("Piso Actual",
-                         e -> {
-                         	a2.notifyObservers();
-                         
-                         }));
-                 
-                 subContent.addComponent(new Button("Estado de las puertas",
-                         e -> {
-                         	a2.saberEstado(a2);
-                         
-                         }));
+                 		 e -> {edificio.llamarAscensor(a2, 7);
+                      	Notification.show("LLAMANDO PISO 7\nHA LLEGADO AL PISO " + a2.getPiso() + "\nABRIENDO PUERTAS\nCERRANDO PUERTAS");
+                          
+                          }));
+                  
+                  subContent.addComponent(new Button("\nAbrir Puertas",
+                          e -> {
+                          	a2.abrirPuertas(a2);
+                          
+                          }));
+                  
+                  subContent.addComponent(new Button("Cerrar Puertas",
+                          e -> {
+                          	a2.cerrarPuertas(a2);
+                          
+                          }));
+                  
+                  subContent.addComponent(new Button("Piso Actual",
+                          e -> {Notification.show("Piso " + a2.getPiso() + " ");
+                         	 a2.notifyObservers();
+                          }));
+                  
+                  subContent.addComponent(new Button("Estado de las puertas",
+                          e -> {
+                          	a2.saberEstado(a2);
+                          
+                          }));
+                  
+                  subContent.addComponent(new Button("EMERGENCIA",
+                          e -> {Notification.show("Alerta de emergencia emitida");
+                          }));
    
                  // Open it in the UI
                  addWindow(subWindow);
@@ -237,8 +252,13 @@ public class MyUI extends UI {
       			Window subWindow = new Window("ASCENSOR 3");
                  VerticalLayout subContent = new VerticalLayout();
                  subWindow.setContent(subContent);
-                 
+                 if (piso3flg == 0) {
+                 	edificio.llamarAscensor(a3, 1);
+                 	piso3flg = 1;
+                 }else
+                 	edificio.llamarAscensor(a3, a3.getPiso());
               
+                 Notification.show("EL ASCENSOR HA LLEGADO AL PISO " + a3.getPiso() + "\nABRIENDO PUERTAS\nCERRANDO PUERTAS");
 
                  // Set window size.
                  subWindow.setHeight("600px");
@@ -252,67 +272,68 @@ public class MyUI extends UI {
                  subContent.addComponent(new Label("ESTAS USANDO EL ASCENSOR 3\n"));
                  
                  subContent.addComponent(new Button("1\n",
-                         e -> {Notification.show("LLAMANDO PISO 1");
-                         edificio.llamarAscensor(a3, 1);
-                         
+                         e -> {edificio.llamarAscensor(a3, 1);
+                         	Notification.show("LLAMANDO PISO 1\nHA LLEGADO AL PISO " + a3.getPiso() + "\nABRIENDO PUERTAS\nCERRANDO PUERTAS");
                          }));
                  
                  subContent.addComponent(new Button("2",
-                         e -> {Notification.show("LLAMANDO PISO 2");
-                         edificio.llamarAscensor(a3, 2);
+                         e -> {edificio.llamarAscensor(a3, 2);
+                     	Notification.show("LLAMANDO PISO 2\nHA LLEGADO AL PISO " + a3.getPiso() + "\nABRIENDO PUERTAS\nCERRANDO PUERTAS");
                          
                          }));
-                         subContent.addComponent(new Button("3",
-                                 e -> {Notification.show("LLAMANDO PISO 3");
-                                 edificio.llamarAscensor(a3, 3);
-                                 
-                                 }));
-                         subContent.addComponent(new Button("4",
-                                 e -> {Notification.show("LLAMANDO PISO 4");
-                                 edificio.llamarAscensor(a3, 4);
-                                 
-                                 }));
-                         subContent.addComponent(new Button("5",
-                                 e -> {Notification.show("LLAMANDO PISO 5");
-                                 edificio.llamarAscensor(a3, 5);
-                                 
-                                 }));
-                         subContent.addComponent(new Button("6",
-                                 e -> {Notification.show("LLAMANDO PISO 6");
-                                 edificio.llamarAscensor(a3, 6);
-                                 
-                                 }));
-                         subContent.addComponent(new Button("7",
-                                 e -> {Notification.show("LLAMANDO PISO 7");
-                                 edificio.llamarAscensor(a3, 7);
-                                 
-                                 }));
+                 subContent.addComponent(new Button("3",
+                         e -> {edificio.llamarAscensor(a3, 3);
+                     	Notification.show("LLAMANDO PISO 3\nHA LLEGADO AL PISO " + a3.getPiso() + "\nABRIENDO PUERTAS\nCERRANDO PUERTAS");
                          
-                         subContent.addComponent(new Button("\nAbrir Puertas",
-                                 e -> {
-                                 	a3.abrirPuertas(a3);
-                                 
-                                 }));
+                         }));
+                 subContent.addComponent(new Button("4",
+                         e -> {edificio.llamarAscensor(a3, 4);
+                     	Notification.show("LLAMANDO PISO 4\nHA LLEGADO AL PISO " + a3.getPiso() + "\nABRIENDO PUERTAS\nCERRANDO PUERTAS");
                          
-                         subContent.addComponent(new Button("Cerrar Puertas",
-                                 e -> {
-                                 	a3.cerrarPuertas(a3);
-                                 
-                                 }));
+                         }));
+                 subContent.addComponent(new Button("5",
+                         e -> {edificio.llamarAscensor(a3, 5);
+                     	Notification.show("LLAMANDO PISO 5\nHA LLEGADO AL PISO " + a3.getPiso() + "\nABRIENDO PUERTAS\nCERRANDO PUERTAS");
                          
-                         subContent.addComponent(new Button("Piso Actual",
-                                 e -> {
-                                 	a3.notifyObservers();
-                                 
-                                 }));
+                         }));
+                 subContent.addComponent(new Button("6",
+                         e -> {edificio.llamarAscensor(a3, 6);
+                     	Notification.show("LLAMANDO PISO 6\nHA LLEGADO AL PISO " + a3.getPiso() + "\nABRIENDO PUERTAS\nCERRANDO PUERTAS");
                          
-                         subContent.addComponent(new Button("Estado de las puertas",
-                                 e -> {
-                                 	a3.saberEstado(a3);
-                                 
-                                 }));
-                   
-
+                         }));
+                 subContent.addComponent(new Button("7",
+                 		 e -> {edificio.llamarAscensor(a3, 7);
+                      	Notification.show("LLAMANDO PISO 7\nHA LLEGADO AL PISO " + a3.getPiso() + "\nABRIENDO PUERTAS\nCERRANDO PUERTAS");
+                          
+                          }));
+                  
+                  subContent.addComponent(new Button("\nAbrir Puertas",
+                          e -> {
+                          	a3.abrirPuertas(a3);
+                          
+                          }));
+                  
+                  subContent.addComponent(new Button("Cerrar Puertas",
+                          e -> {
+                          	a3.cerrarPuertas(a3);
+                          
+                          }));
+                  
+                  subContent.addComponent(new Button("Piso Actual",
+                          e -> {Notification.show("Piso " + a3.getPiso() + " ");
+                         	 a3.notifyObservers();
+                          }));
+                  
+                  subContent.addComponent(new Button("Estado de las puertas",
+                          e -> {
+                          	a3.saberEstado(a3);
+                          
+                          }));
+                  
+                  subContent.addComponent(new Button("EMERGENCIA",
+                          e -> {Notification.show("Alerta de emergencia emitida");
+                          }));
+   
                          // Open it in the UI
                          addWindow(subWindow);
                          //------------------
@@ -322,6 +343,51 @@ public class MyUI extends UI {
               	
               	
               //----------------------------------------------------------------
+      	
+      	hlayout.addComponent(new Button("PANEL DE CONTROL",
+      			click -> {
+      			Window subWindow = new Window("PANEL DE CONTROL");
+                 VerticalLayout subContent = new VerticalLayout();
+                 subWindow.setContent(subContent);
+                 
+              
+
+                 // Set window size.
+                 subWindow.setHeight("250px");
+                 subWindow.setWidth("400px");
+                 subWindow.setPositionX(1400);
+                 subWindow.setPositionY(50);
+
+
+                 // Put some components in it
+                 subContent.addComponent(new Label("Aquí se puede ver información de los ascensores\n"));
+                 
+                 subContent.addComponent(new Button("Piso en el que está el ascensor 1\n",
+                         e -> {
+                         	Notification.show("Piso: " + a1.getPiso());
+                         }));
+                 
+                 subContent.addComponent(new Button("Piso en el que está el ascensor 2\n",
+                         e -> {
+                        	 Notification.show("Piso: " + a2.getPiso());
+                         
+                         }));
+                 subContent.addComponent(new Button("Piso en el que está el ascensor 3\n",
+                         e -> {
+                        	 Notification.show("Piso: " + a3.getPiso());
+                         }));
+                  
+                  subContent.addComponent(new Button("EMERGENCIA",
+                          e -> {Notification.show("Alerta de emergencia emitida");
+                          }));
+   
+                 // Open it in the UI
+                 addWindow(subWindow);
+                 //------------------
+                 
+                 }));
+      	
+      	// ----------------------------------------------------------------------------
                  
                  layout.addComponents(hlayout);       
                  hlayout.addComponents();

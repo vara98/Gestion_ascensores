@@ -13,10 +13,7 @@ public class PisosNumero implements Observer {
 	}
 	
 	public void display() {
-		if (this.piso == 0) {
-			System.out.println("0");
-		}
-		else if (this.piso == 1) {
+		if (this.piso == 1) {
 			System.out.println("1");
 		}
 		else if (this.piso == 2) {
@@ -33,6 +30,9 @@ public class PisosNumero implements Observer {
 		}
 		else if (this.piso == 6) {
 			System.out.println("6");
+		}
+		else if (this.piso == 7) {
+			System.out.println("7");
 		}
 		else {
 			
