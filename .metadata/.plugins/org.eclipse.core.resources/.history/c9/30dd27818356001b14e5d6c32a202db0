@@ -163,6 +163,7 @@ public class MyUI extends UI {
                  subContent.addComponent(new Button("1\n",
                          e -> {Notification.show("LLAMANDO PISO 1");
                          edificio.llamarAscensor(a2, 1);
+                         
                          }));
                  
                  subContent.addComponent(new Button("2",
