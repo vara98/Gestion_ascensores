@@ -2196,3 +2196,9 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2021-01-14 19:58:27.289
 !MESSAGE GWT plugin is configured to detect modules, but none were found.
+
+!ENTRY com.vaadin.designer2 1 0 2021-01-14 20:01:02.872
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer2 1 0 2021-01-14 20:01:02.873
+!MESSAGE Removed all models from server.
